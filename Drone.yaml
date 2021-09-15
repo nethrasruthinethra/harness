@@ -8,14 +8,12 @@ name: default
 steps:
 
 - name: build
-  image: golang:1.13
+  image: ubuntu
   settings:
     username:
       from_secret: registry_username
     password:
       from_secret: registry_sssss
-  commands:
-    - "go build -o ./myapp"
 
 - name: publish  
   image: plugins/docker
