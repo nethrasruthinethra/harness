@@ -16,9 +16,9 @@ steps:
   image: plugins/docker
   settings:
     username:
-      from_secret: docker_username
+      from_secret: registry_username
     password:
-      from_secret: docker_password
-    repo: rlachhman/myrepo
+      from_secret: registry_password
+    repo: 
     auto_tag: true
-    auto_tag_suffix: drone-build
+    auto_tag_suffix: harness
