@@ -9,6 +9,11 @@ steps:
 
 - name: build
   image: golang:1.13
+  settings:
+    username:
+      from_secret: registry_username
+    password:
+      from_secret: registry_password
   commands:
     - "go build -o ./myapp"
 
