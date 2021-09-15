@@ -13,7 +13,7 @@ steps:
     username:
       from_secret: registry_username
     password:
-      from_secret: registry_password
+      from_secret: registry_sssss
   commands:
     - "go build -o ./myapp"
 
@@ -23,7 +23,7 @@ steps:
     username:
       from_secret: registry_username
     password:
-      from_secret: registry_password
+      from_secret: registry_sssss
     repo: 
     auto_tag: true
     auto_tag_suffix: harness
